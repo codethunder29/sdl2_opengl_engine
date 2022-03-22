@@ -152,7 +152,7 @@ void Engine::setResize(bool value)
     SDL_SetWindowResizable(window, (SDL_bool)value);
 }
 
-// set max fps (updates are only 60 frames, lps the number of loops per second to not hog the cpu)
+// set max lps (updates are only 60 frames, lps is the number of loops per second, its used to not hog the cpu)
 void Engine::setMaxLPS(Uint16 lps)
 {
     maxLPS = lps;
